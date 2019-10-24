@@ -1,13 +1,13 @@
 #include <stdio.h>
 
 int main(){
-	int k,tmp,max,nr,i=0;
+	int k,tmp,max=-99999,nr,i=0;
 	printf("введите число k: ");
 	scanf("%i",&k);
 	printf("введите набор чисел\n");
 	do{
 		scanf("%i",&tmp);
-		if(tmp > max){
+		if(tmp > max && tmp != 0 && tmp > k){
 			max=tmp;
 			nr=i+1;
 		}
